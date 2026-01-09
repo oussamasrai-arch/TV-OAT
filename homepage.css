@@ -1,0 +1,600 @@
+/* general css */
+body {
+  background: #9e0505;
+  background: radial-gradient(circle, rgba(158, 5, 5, 1) 0%, rgba(0, 0, 0, 1) 86%);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 50px;
+}
+header img {
+  background-color: transparent;
+  margin-top: 7px;
+}
+ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+hr {
+  opacity: 0.1;
+}
+.header {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  margin: 10px;
+}
+a:hover {
+  color: #ff0000;
+}
+/* home page css */
+.home {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.tag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(158, 5, 5, 0.2);
+  color: #ff6b6b;
+  font-size: 12px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  margin: 20px 0;
+}
+
+.hero-text p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: unset;
+  font-weight: 100;
+}
+.btn:hover {
+  color: #ffffff;
+}
+
+.primary {
+  background: #9e0505;
+  color: white;
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 320px;
+  border-radius: 20px;
+}
+
+.rating {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 24px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.flex-list {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
+  height: 370px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s, filter 0.5s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.6);
+}
+
+.characters_home {
+  width: 180px;
+  height: 280px;
+}
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+.more a {
+  font-size: 15px;
+}
+.more svg {
+  position: relative;
+  top: 2px;
+}
+
+/* tv shows and movie page css */
+#TV {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-tv {
+  width: 255px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+  margin: 23px;
+}
+.top-card-tv {
+  height: 72%;
+  background-size: cover;
+  background-position: center;
+  transition: height 0.3s ease;
+}
+.bottom-card-tv {
+  height: 28%;
+  background-color: #701c1a;
+  padding: 15px;
+  transition: height 0.3s ease;
+}
+.card-tv-content {
+  text-align: center;
+  color: white;
+}
+.card-tv-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.card-tv-txt {
+  font-size: 12px;
+  opacity: 0.9;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.card-tv-btn {
+  margin-top: 15px;
+  display: inline-block;
+  color: white;
+  border: 2px solid #f42c1d;
+  padding: 5px 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.card-tv-btn:hover {
+  background-color: #f42c1d;
+  color: black;
+}
+.card-tv:hover .top-card-tv {
+  height: 55%;
+}
+.card-tv:hover .bottom-card-tv {
+  height: 45%;
+}
+/* characters page css */
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.characters_card {
+  width: 140px;
+  height: 200px;
+  border-radius: 20px;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.characters_card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: RED;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.characters_name {
+  transform: translate(-50%, -800%);
+  width: 80%;
+  border-radius: 1rem;
+  border: none;
+  background-color: RED;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.characters_card:hover {
+  border-color: RED;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+.characters_card:hover .characters_card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+.characters_card:hover .characters_name {
+  transform: translate(-50%, -690%);
+  opacity: 1;
+}
+@media (max-width: 500px) and (min-width: 360px) {
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+  header img {
+    background-color: transparent;
+    margin: -10px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 10px;
+  }
+  .hero {
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+  }
+  .hero-text {
+    width: 50%;
+  }
+  .tag {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(158, 5, 5, 0.2);
+    color: #ff6b6b;
+    font-size: 12px;
+  }
+  .hero-text h1 {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .hero-text p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
+  .secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  .hero-image {
+    position: relative;
+  }
+  .hero-image img {
+    width: 150px;
+    height: 230px;
+    border-radius: 20px;
+  }
+  .rating{
+    position: absolute;
+    top: 1px;
+    right: 3px;
+  }
+  .section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 24px;
+  }
+  .card {
+    width:40% ;
+    min-width: 150px;
+    height: 250px;
+  }
+  .characters_home {
+    width: 100px;
+    height: 230px;
+  }
+  .card-tv {
+    width: 160px;
+    height: 330px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+  }
+  .top-card-tv {
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    transition: height 0.3s ease;
+  }
+  .bottom-card-tv {
+    height: 40%;
+    background-color: #701c1a;
+    padding: 9px;
+    transition: height 0.3s ease;
+  }
+  .card-tv-content {
+    text-align: center;
+    color: white;
+  }
+  .card-tv-title {
+    font-size: 12.5px;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+  .card-tv-txt {
+    font-size: 9px;
+    opacity: 0.9;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  .card-tv-btn {
+    margin-top: 1px;
+    display: inline-block;
+    color: white;
+    border: 2px solid #f42c1d;
+    padding: 7px 15px;
+    border-radius: 12px;
+  }
+  .card-tv-btn:hover {
+    background-color: #f42c1d;
+    color: black;
+  }
+  .card-tv:hover .top-card-tv {
+    height: 60%;
+  }
+  .card-tv:hover .bottom-card-tv {
+    height: 40%;
+  }
+  .characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .characters_card {
+    width: 85px;
+    height: 170px;
+    margin-bottom: 30px;
+  
+  }
+  .characters_card-button {
+    transform: translate(-50%, 50%);
+    width: 60%;
+    border-radius: 15px;
+    border: none;
+    background-color: RED;
+    color: #fff;
+    font-size:10px;
+    padding: 10px ;
+    opacity: 1;
+  }
+  .characters_name {
+    transform: translate(-50%, -750%);
+    width: 80%;
+    opacity: 1;
+    font-size: 10px;
+  
+  }
+  .characters_card:hover {
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  .characters_card:hover .characters_card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
+  .characters_card:hover .characters_name {
+    transform: translate(-50%, -750%);
+    opacity: 1;
+  }
+}
+/* tv shows POSTER css */
+#SUPERNATURAL {
+  background-image: url("img/TV SHOWS/Supernatural.jpg");
+}
+#The_Mentalist {
+  background-image: url("img/TV SHOWS/The Mentalist.jpg");
+}
+#LOKI {
+  background-image: url("img/TV SHOWS/LOKI.jpg");
+}
+#GAME_OF_THRONES {
+  background-image: url("img/TV SHOWS/GAME OF THRONES.jpg");
+}
+#HOUSE_MD {
+  background-image: url("img/TV SHOWS/House M_D_.jpg");
+}
+#DAREDEVIL {
+  background-image: url("img/TV SHOWS/DAREDEVIL.jpg");
+}
+#THE_BOYS {
+  background-image: url("img/TV SHOWS/The Boys.jpg");
+}
+#THE_WALKING_DEAD {
+  background-image: url("img/TV SHOWS/THE WALKING DEAD.jpg");
+}
+/* movie POSTER css */
+#SE7EN {
+  background-image: url("img/MOVIE/SE7EN.jpg");
+}
+#INTERSTELLAR {
+  background-image: url("img/MOVIE/Interstellar.jpg");
+}
+#AVENGERS_ENDGAME {
+  background-image: url("img/MOVIE/AVENGERS ENDGAME.jpg");
+}
+#THE_MAZE_RUNNER {
+  background-image: url("img/MOVIE/THE MAZE RUNNER.jpg");
+}
+#MAN_OF_STEEL {
+  background-image: url("img/MOVIE/MAN OF STEEL.jpg");
+}
+#PRISONERS {
+  background-image: url("img/MOVIE/PRISONERS.jpg");
+}
+#SHUTTER_ISLAND {
+  background-image: url("img/MOVIE/SHUTTER\ ISLAND.jpg");
+}
+#DEADPOOL_WOLVERINE {
+  background-image: url("img/MOVIE/DEADPOOL\ &\ WOLVERINE.jpg");
+}
+/* characters POSTER css */
+#TYRION_LANNISTER {
+  background-image: url("img/Characters/TYRION\ LANNISTER.jpg");
+}
+#DEAN_WINCHESTER {
+  background-image: url("img/Characters/DEAN\ WINCHESTER.jpg");
+}
+#SAMEEN_SHAW {
+  background-image: url("img/Characters/SAMEEN SHAW.jpg");
+}
+#DEADPOOL {
+  background-image: url("img/Characters/Wade Wilson • Deadpool.jpg");
+}
+#REDDINGTON {
+  background-image: url("img/Characters/RAYMOND REDDINGTON.jpg");
+}
+#DAENERYS {
+  background-image: url("img/Characters/DAENERYS TARGARYEN.jpg");
+}
+#TONY_STARK {
+  background-image: url("img/Characters/TONY_STARK.jpg");
+}
+#loki {
+  background-image: url("img/Characters/LOKI.jpg");
+}
+#ELLIE_GREENAWAY {
+  background-image: url("img/Characters/Elle Greenaway icon.jpg");
+}
+#RUST_COHLE {
+  background-image: url("img/Characters/Matthew McConaughey.jpg");
+}
+#GREGORY_HOUSE {
+  background-image: url("img/Characters/GREGORY HOUSE.jpg");
+}
+#SAM_WINCHESTER {
+  background-image: url("img/Characters/SAM_WINCHESTER.jpg");
+}
+#KATNISS_EVERDEEN {
+  background-image: url("img/Characters/n.jpg");
+}
+#PATRICK_JANE {
+  background-image: url("img/Characters/PATRICK JANE.jpg");
+}
+#JOHN_REESE {
+  background-image: url("img/Characters/Reese.jpg");
+}
+#JON_SNOW {
+  background-image: url("img/Characters/JON SNOW.jpg");
+}
+#JOE_GOLDBERG {
+  background-image: url("img/Characters/Joe.jpg");
+}
+#WALTER_WHITE {
+  background-image: url("img/Characters/walter.jpg");
+}
+#MORNINGSTAR {
+  background-image: url("img/Characters/lucifer.jpg");
+}
+#BILLY_BUTCHER {
+  background-image: url("img/Characters/BILLY BUTCHER.jpg");
+}
