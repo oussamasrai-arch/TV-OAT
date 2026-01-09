@@ -190,6 +190,11 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+#MOVIE{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 .card-tv {
   width: 255px;
   height: 420px;
@@ -311,6 +316,7 @@ a:hover {
   transform: translate(-50%, -690%);
   opacity: 1;
 }
+/*  Phone Size */
 @media (max-width: 500px) and (min-width: 360px) {
   
   header {
