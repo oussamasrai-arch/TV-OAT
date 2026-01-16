@@ -1,0 +1,355 @@
+body {
+  background: #9e0505;
+  background: radial-gradient(
+    circle,
+    rgba(158, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 1) 86%
+  );
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 50px;
+}
+header img {
+  background-color: transparent;
+  margin-top: 7px;
+}
+ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #e63946;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+.header {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  margin: 10px;
+}
+a:hover {
+  color: #ff4d4d;
+}
+hr {
+  opacity: 0.1;
+}
+.TV_shows_inf {
+  display: flex;
+  justify-content: space-between;
+}
+.TV_shows_main {
+  width: 430px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 30px;
+  margin-top: -5px;
+}
+.characters_row {
+  width: 58%;
+  height: 450px;
+  border-radius: 20px;
+  margin: 9px;
+  margin-top: -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.TV_shows_all {
+  display: flex;
+  justify-content: space-between;
+}
+.TV_shows_img {
+  width: 210px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid #ff330077;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TV_shows_detail {
+  width: 210px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #000000;
+  border: 2px solid #ff330077;
+}
+.TV_shows_story {
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: 2px solid #ff330077;
+  text-align: center;
+  background-color: #000000;
+}
+.info-container {
+  width: 88%;
+  margin: 0px 9px;
+}
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #ff33004a;
+}
+.info-item-last {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #f42c1d;
+}
+.value {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: right;
+}
+.story-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 5px;
+  color: #ff0000;
+}
+.story-btn {
+  padding: 0px 25px;
+  font-size: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.character {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  padding: 5px;
+}
+.character img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ff330077;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.title_name {
+  text-align: center;
+  width: 200px;
+  height: 33.7px;
+  position: relative;
+  top: -15px;
+  background-color: #ff0000;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watch {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="40,30 40,70 75,50" fill="white"/></svg>');
+  width: 40px;
+  height: 40px;
+  background-color: #ff0000;
+  transform: translate(175%, 775%);
+  border-radius: 25px;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watch-btn {
+  height: 40px;
+  width: 40px;
+  opacity: 0;
+}
+
+.TV_shows_img:hover .watch {
+  transform: translate(175%, 700%);
+  opacity: 1;
+}
+@media (max-width: 500px) and (min-width: 360px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+  header img {
+    background-color: transparent;
+    margin: -10px;
+  }
+  a {
+    text-decoration: none;
+    color: #e63946;
+    font-size: 10px;
+  }
+  .TV_shows_inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .TV_shows_main {
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  .characters_row {
+    width: 100%;
+    margin: auto;
+  }
+  .TV_shows_all {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .TV_shows_img {
+    width: 150px;
+    min-width: 150px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid #ff330077;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  .TV_shows_detail {
+    width: 220px;
+    min-width: 155px;
+    height: 250px;
+  }
+  .TV_shows_story {
+    width: 100%;
+    height: 125px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px solid #ff330077;
+    text-align: center;
+    background-color: #000000;
+  }
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border-bottom: 1px solid #ff33004a;
+  }
+  .info-item-last {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
+  .label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #f42c1d;
+  }
+  .value {
+    font-size: 10px;
+    color: #ffffff;
+    text-align: right;
+  }
+  .story-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: px;
+    color: #ff0000;
+  }
+  .story-btn {
+    padding: 0px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .character {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+  .character img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff330077;
+  }
+  .watch {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="40,30 40,70 75,50" fill="white"/></svg>');
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    transform: translate(0%, 575%);
+    border-radius: 25px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .watch-btn {
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+  }
+  .TV_shows_img:hover .watch {
+    transform: translate(0%, 575%);
+    opacity: 1;
+  }
+}
+
+/* tv shows POSTER css */
+#supernatural_img {
+  background-image: url(../img/Supernatural.jpg);
+}
+#The_Mentalist {
+  background-image: url("../img/TV SHOWS/The Mentalist.jpg");
+}
+#loki_img {
+  background-image: url("../img/TV SHOWS/LOKI.jpg");
+}
+#GAME_OF_THRONES_img {
+  background-image: url("../img/TV SHOWS/GAME OF THRONES.jpg");
+}
+#House_MD_img {
+  background-image: url("../img/TV SHOWS/House\ M_D_.jpg");
+}
+#DAREDEVIL_img {
+  background-image: url("../img/TV SHOWS/DAREDEVIL.jpg");
+}
+#the_boys_img {
+  background-image: url("../img/TV SHOWS/The\ Boys.jpg");
+}
+#TWD_img {
+  background-image: url("../img/TV SHOWS/THE\ WALKING\ DEAD.jpg");
+}
