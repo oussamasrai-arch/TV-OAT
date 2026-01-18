@@ -56,7 +56,7 @@ a:hover {
     border-radius: 20px;
     margin: 30px;
     margin-top: -5px;
-    
+    margin-right: 0px;
 }
 .main_row{
     width: 58%;
@@ -66,6 +66,7 @@ a:hover {
     margin-top: -5px;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0px;
 }
 .TV_shows_all{
     display: flex;
@@ -81,25 +82,11 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat; 
 }
-.season-number{
-    width: 209px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0px;
-    padding-left:5px ;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
-    font-size: 20px;
-
-}
 .TV_shows_detail{
     width: 209px;
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
+    margin: 10px 5px;
     background-color: #000000;
     border: 2px solid #ff330077;
 }
@@ -187,39 +174,39 @@ a:hover {
     align-items: center;
 }
 .seasons{
-    width: 160px;
-    height: 455px;
+    height:150px;
     border-radius: 20px;
-    margin: 15px;
-    margin-top: -5px;
-    background-color:#ff000042 ;
+    margin: 20px;
+    margin-right:5px ;
+    margin-top: 15px;
+    background-color: #9e05057e;
 
 }
 .season{
     width: 150px;
-    height: 25px;
-    background-color: #9e05057e ;
+    height: 40px;
+    background-color: #ff0000;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px;
 }
-#supernatural_img{
-    background-image: url("../../../img/Supernatural.jpg");
+#DAREDEVIL_img{
+    background-image: url("../../../img/TV SHOWS/DAREDEVIL.jpg");
 }
 .episodes{
     display: flex;
     flex-wrap: wrap;
     width: 540px;
-    height: 300px;
+    height: 200px;
     background-color: #9e05057e;
-    
+    margin-top: -100px;
 }
 .episode{
     display: flex;
     flex-wrap: wrap;
-    width: 55px;
+    width: 59px;
     height: 55px;
     background-color: #ff00007e;
     border-radius: 10px;
@@ -227,12 +214,13 @@ a:hover {
     align-items: center;
     margin: 5px;
     
+    
 }
 .EP-S{
     display: flex;
     justify-content: center;
 }
-@media(max-width: 500px){
+@media(max-width: 500px) and (min-width: 360px){
     
 
     header {
@@ -288,7 +276,8 @@ a:hover {
     .TV_shows_detail{
         width: 190px;
         min-width: 155px;
-        height: 200px;
+        height: 250px;
+        margin: 10px;
     }
     
     .TV_shows_story{
@@ -300,22 +289,6 @@ a:hover {
         border: 2px solid #ff330077;
         text-align: center;
         background-color: #000000;
-
-    }
-    .season-number{
-    width: 200px;
-    height: 40px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0px;
-    padding-left:5px ;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
-    font-size: 19px;
 
     }
     .info-item {
@@ -360,12 +333,13 @@ a:hover {
     .seasons{
     width: 100%;
     max-width: 400px;
-    height: 175px;
+    height: 50px;
     background-color: #9e05057e;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin:auto;
+    align-items: center;
     }
     .season{
         width: 100px;
@@ -379,25 +353,27 @@ a:hover {
     .episodes{
     width: 100%;
     max-width: 400px;
-    height: 200px;
+    height: 100px;
     background-color: #9e05057e;
     justify-content: space-between;
     position: relative;
     top: -70px;
     margin: 0px;
     border-radius: 10px;
+    margin-top: -80px;
 
     
     }
     .episode{
         display: flex;
         flex-wrap: wrap;
-        width: 60px;
+        width: 50px;
         height: 25px;
         background-color: #ff00007e;
         border-radius: 10px;
         justify-content: center;
         align-items: center;
+        margin: 3px;
     }
     .title_name{
     width: 200px;
