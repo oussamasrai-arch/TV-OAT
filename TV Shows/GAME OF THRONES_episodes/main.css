@@ -166,6 +166,7 @@ a:hover {
     margin: 20px;
     margin-top: -5px;
     background-color: #9e05057e;
+    height: 250px;
 
 }
 .season{
@@ -292,7 +293,7 @@ a:hover {
     .seasons{
     width: 100%;
     max-width: 400px;
-    height: 200px;
+    height: 70px;
     margin-top: 25px;
     background-color: #9e05057e;
     display: flex;
@@ -304,7 +305,7 @@ a:hover {
 
     }
     .season{
-        width: 100px;
+        width: 90px;
         height: 25px;
         background-color: #ff0000;
         border-radius: 20px;
@@ -314,7 +315,7 @@ a:hover {
         margin: 5px;
     }
 }
-#supernatural_img{
-    background-image: url("../../img/Supernatural.jpg");
+#GAME_OF_THRONES_img{
+    background-image: url("../../img/TV SHOWS/GAME\ OF\ THRONES.jpg");
 }
 
