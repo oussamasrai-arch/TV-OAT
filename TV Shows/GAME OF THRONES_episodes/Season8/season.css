@@ -215,9 +215,9 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 540px;
-    height: 200px;
+    height: 100px;
     background-color: #9e05057e;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 .episode{
     display: flex;
@@ -395,7 +395,7 @@ a:hover {
     .episode{
         display: flex;
         flex-wrap: wrap;
-        width: 60px;
+        width: 50px;
         height: 25px;
         background-color: #ff00007e;
         border-radius: 10px;
