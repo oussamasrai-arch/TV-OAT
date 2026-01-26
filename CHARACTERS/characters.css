@@ -1,0 +1,350 @@
+body {
+  background: #9e0505;
+  background: radial-gradient(
+    circle,
+    rgba(158, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 1) 86%
+  );
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 50px;
+}
+header img {
+  background-color: transparent;
+  margin-top: 7px;
+}
+ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #e63946;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+.header {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  margin: 10px;
+}
+a:hover {
+  color: #ff4d4d;
+}
+hr {
+  opacity: 0.1;
+}
+.character_inf {
+  display: flex;
+  justify-content: space-between;
+}
+.character_main {
+  width: 430px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 30px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+.character_all {
+  display: flex;
+  justify-content: space-between;
+}
+.character_img {
+  width: 210px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid #ff330077;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.actor-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.character_detail {
+  width: 210px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #000000;
+  border: 2px solid #ff330077;
+}
+.character_story {
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: 2px solid #ff330077;
+  text-align: center;
+  background-color: #000000;
+}
+.info-container {
+  width: 88%;
+  margin: 0px 9px;
+}
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  border-bottom: 1px solid #ff33004a;
+}
+.info-item-last {
+  display:flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #f42c1d;
+}
+.value {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: right;
+}
+.story-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 5px;
+  color: #ff0000;
+}
+.story-btn {
+  padding: 0px 25px;
+  font-size: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.title_name{
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    position: relative;
+    background-color: #ff000077;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+    font-size: 40px;
+    font-weight: bold;
+    border-radius:20px;
+    display: flex;
+    left: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.actor{
+  width: 600px;
+  height: 200px;
+  margin: 30px 50px 10px;
+  background-color: #9e050558;
+  border-radius: 20px;
+  display: flex;
+}
+.actor-img{
+  height: 90%;
+  width: 20%;
+  margin: auto 10px;
+  border-radius: 10px;
+}
+.works{
+  display: flex;
+  margin-right: 10px;
+}
+.work{
+  margin: 10px;
+  height: 170px;
+  width: 110px;
+  object-fit: cover;
+  justify-content: space-between;
+}
+.work img{
+  height: 170px;
+  width: 110px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) and (min-width: 360px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+  header img {
+    background-color: transparent;
+    margin: -10px;
+  }
+  a {
+    text-decoration: none;
+    color: #e63946;
+    font-size: 10px;
+  }
+  .character_inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .character_main {
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  .character_all {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .character_img {
+    width: 150px;
+    min-width: 150px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid #ff330077;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  .character_detail {
+    width: 220px;
+    min-width: 155px;
+    height: 250px;
+  }
+  .character_story {
+    width: 100%;
+    height: 125px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px solid #ff330077;
+    text-align: center;
+    background-color: #000000;
+  }
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border-bottom: 1px solid #ff33004a;
+  }
+  .info-item-last {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
+  .label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #f42c1d;
+  }
+  .value {
+    font-size: 10px;
+    color: #ffffff;
+    text-align: right;
+  }
+  .story-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: px;
+    color: #ff0000;
+  }
+  .story-btn {
+    padding: 0px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .works{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  .work{
+  margin: 10px;height: 220px;
+  width: 40%;
+  object-fit: cover;
+  justify-content: space-between;
+  }
+  .work img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  }
+  .actor{
+  width: 90%;
+  height: 200px;
+  margin: 30px auto 10px;
+  background-color: #9e050558;
+  border-radius: 20px;
+  display: flex;
+  }
+  .title_name{
+    width: 90%;
+    height: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+    left: 0px;
+}
+}
+/*charcters img*/
+#BILLY_BUTCHER{background-image: url("../img/Characters/BILLY\ BUTCHER.jpg");}
+#DAENERYS_TARGARYEN{background-image: url("../img/Characters/DAENERYS\ TARGARYEN.jpg");}
+#ELLE_GREENAWAY{background-image: url("../img/Characters/Elle\ Greenaway\ icon.jpg");}
+#RUST_COHLE{background-image: url("../img/Characters/Matthew\ McConaughey.jpg");}
+#SAM_WINCHESTER{background-image: url("../img/Characters/SAM_WINCHESTER.jpg");}
+#GREGORY_HOUSE{background-image: url("../img/Characters/GREGORY\ HOUSE.jpg");}
+#KATNISS_EVERDEEN{background-image: url("../img/Characters/n.jpg");}
+#PATRICK_JANE{background-image: url("../img/Characters/PATRICK\ JANE.jpg");}
+#JOHN_REESE{background-image: url("../img/Characters/Reese.jpg");}
+#JON_SNOW{background-image: url("../img/Characters/JON\ SNOW.jpg");}
+#JOE_GOLDBERG{background-image: url("../img/Characters/Joe.jpg");}
+#WALTER_WHITE{background-image: url("../img/Characters/walter.jpg");}
+#LUCIFER_MORNINGSTAR{background-image: url("../img/Characters/lucifer.jpg");}
+#TYRION_LANNISTER{background-image: url("../img/Characters/TYRION LANNISTER.jpg");}
+#SAMEEN_SHAW{background-image: url("../img/Characters/SAMEEN\ SHAW.jpg");}
+#DEAN_WINCHESTER{background-image: url("../img/Characters/DEAN\ WINCHESTER.jpg");}
+#DEADPOOL{ background-image: url("../img/Characters/Wade\ Wilson\ •\ Deadpool.jpg");}
+#REDDINGTON{background-image: url("../img/Characters/RAYMOND\ REDDINGTON.jpg");}
+#TONY_STARK{background-image: url("../img/Characters/TONY_STARK.jpg");}
+#LOKI{background-image: url("../img/Characters/LOKI.jpg");}
+/*actor img*/
+#Emilia_Clarke {background-image: url("../img/charactrers-page/DAENERYS/Emilia\ Clarke.jpg");}
+#Lola_Glaudini {background-image: url("../img/charactrers-page/ELLIE_GREENAWAY/lola\ glaudini.jpg");}
+#Matthew_McConaughey {background-image: url("../img/charactrers-page/RUST_COHLE/Matthew\ McConaughey.jpg");}
+#Jared_Padalecki {background-image: url("../img/charactrers-page/SAM_WINCHESTER/Extra\ TV.jpg");}
+#Hugh_Laurie {background-image: url("../img/charactrers-page/GREGORY_HOUSE/_____.jpg");}
+#Jennifer_Lawrence {background-image: url("../img/charactrers-page/KATNISS_EVERDEEN/Jennifer\ Lawrence.jpg");}
+#Simon_Baker {background-image: url("../img/charactrers-page/PATRICK_JANE/simon\ baker.jpg");}
+#Jim_Caviezel {background-image: url("../img/charactrers-page/JOHN_REESE/télécharger\ \(3\).jpg");}
+#Kit_Harington {background-image: url("../img/charactrers-page/JON_SNOW/Aquila\ Black.jpg");}
+#Penn_Badgley {background-image: url("../img/charactrers-page/JOE_GOLDBERG/Penn\ Badgley.jpg");}
+#Bryan_Cranston {background-image: url("../img/charactrers-page/WALTER_WHITE/télécharger\ \(6\).jpg");}
+#Tom_Ellis {background-image: url("../img/charactrers-page/MORNINGSTAR/Tom\ Ellis.jpg");}
+#Karl_Urban {background-image: url("../img/charactrers-page/BILLY BUTCHER/Wolverine\ \(Karl\ Urban\).jpg");}
+#Robert_Downey_Jr {background-image: url("../img/charactrers-page/TONY_STARK/Robert\ Downey\ Jr_.jpg");}
+#Tom_Hiddleston {background-image: url("../img/charactrers-page/loki/Tom\ Hiddleston.jpg");}
+#Peter_Dinklage {background-image: url("../img/charactrers-page/TYRION_LANNISTER/Peter\ Dinklage.jpg");}
+#Jensen_Ackles {background-image: url("../img/charactrers-page/dean_winchester/jensen\ ackles.jpg");}
+#Sarah_Shahi {background-image: url("../img/charactrers-page/SAMEEN_SHAW/télécharger\ \(3\).jpg");}
+#Ryan_Reynolds {background-image: url("../img/charactrers-page/DEADPOOL/Ryan\ Reynolds.jpg");}
+#James_Spader {background-image: url("../img/charactrers-page/REDDINGTON/James\ Spader\ Ator\ Americano\ Talentoso\ e\ maravilhoso.jpg");}

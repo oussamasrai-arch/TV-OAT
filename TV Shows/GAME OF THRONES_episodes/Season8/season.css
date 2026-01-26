@@ -291,7 +291,7 @@ a:hover {
     .TV_shows_detail{
         width: 190px;
         min-width: 155px;
-        height: 200px;
+        height: 250px;
     }
     
     .TV_shows_story{
@@ -382,11 +382,11 @@ a:hover {
     .episodes{
     width: 100%;
     max-width: 400px;
-    height: 100px;
+    height: 40px;
     background-color: #9e05057e;
     justify-content: space-between;
     position: relative;
-    top: -100px;
+    top: -150px;
     margin: 0px;
     border-radius: 10px;
 
