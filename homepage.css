@@ -357,7 +357,7 @@ a:hover {
     margin-bottom: 30px;
   }
   .btn {
-    font-size: 13px;
+    font-size: 0.7em;
     padding: 10px 10px;
     border-radius: 30px;
   }
@@ -385,7 +385,7 @@ a:hover {
   }
   .card {
     width:40% ;
-    min-width: 150px;
+    min-width: 140px;
     height: 250px;
   }
   .characters_home {
@@ -393,22 +393,22 @@ a:hover {
     height: 230px;
   }
   .card-tv {
-    width: 160px;
-    height: 330px;
+    width: 170px;
+    height: 300px;
     border-radius: 20px;
     overflow: hidden;
     background-color: #1a1a1a;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
-    margin: 10px;
+    margin: 10px 0;
   }
   .top-card-tv {
-    height: 60%;
+    height: 71%;
     background-size: cover;
     background-position: center;
     transition: height 0.3s ease;
   }
   .bottom-card-tv {
-    height: 40%;
+    height: 29%;
     background-color: #701c1a;
     padding: 9px;
     transition: height 0.3s ease;
@@ -428,7 +428,7 @@ a:hover {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   }
   .card-tv-btn {
-    margin-top: 1px;
+    margin-top: 11px;
     display: inline-block;
     color: white;
     border: 2px solid #f42c1d;
@@ -437,13 +437,13 @@ a:hover {
   }
   .card-tv-btn:hover {
     background-color: #f42c1d;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   .card-tv:hover .top-card-tv {
-    height: 60%;
+    height: 55%;
   }
   .card-tv:hover .bottom-card-tv {
-    height: 40%;
+    height: 45%;
   }
   .characters {
     display: flex;
@@ -451,7 +451,7 @@ a:hover {
     justify-content: space-around;
   }
   .card-actor {
-    width: 40%;
+  width: 40%;
   max-width: 170px;
   min-width: 130px;
   height: 240px;
@@ -505,13 +505,13 @@ a:hover {
     margin: 10px ;
   }
   .top-card-tv{
-    height: 55%;
+    height: 72%;
   }
   .bottom-card-tv{
-    height: 45%;
+    height: 28%;
   }
   .card-tv-title {
-    font-size: 18px;
+    font-size: 17px;
   }
   .card-tv-txt {
     font-size: 9px;
@@ -519,13 +519,13 @@ a:hover {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   }
   .card-tv-btn{
-    margin-top: 20px;
+    margin-top: 23px;
   }
   .card-tv:hover .top-card-tv {
-    height: 55%;
+    height: 54%;
   }
   .card-tv:hover .bottom-card-tv {
-    height: 45%;
+    height: 46%;
   }
   .card_bt:hover{
     color: #fff;

@@ -4,6 +4,7 @@ body {
     background: radial-gradient(circle, rgba(158, 5, 5, 1) 0%, rgba(0, 0, 0, 1) 86%);
     margin: 0;
     font-family: Arial, sans-serif;
+
 }
 header {
     display: flex;
@@ -58,10 +59,11 @@ hr{
     width: 58%;
     height: 450px;
     border-radius: 20px;
-    margin: 30px;
+    margin: 10px;
     margin-top: -5px;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 .movie_all{
     display: flex;
@@ -242,12 +244,11 @@ hr{
     }
     .movie_all{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .movie_img{
-        width: 50%;
+        width: 150px;
         min-width: 150px;
-        max-width: 190px;
         height: 250px;
         border-radius: 20px;
         margin: 10px;
@@ -259,9 +260,10 @@ hr{
         justify-content: center;
     }
     .movie_detail{
-        width: 50%;
-        max-width: 230px;
+        width:50% ;
+        min-width: 160px;
         height: 250px;
+        margin-left: 2px;;
     }
     .movie_story{
         width: 100%;
@@ -325,7 +327,7 @@ hr{
         background-color: #ff0000;
         transform: translate(0%, 575%);
         border-radius: 25px;
-        opacity:1;
+        opacity:0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -338,6 +340,84 @@ hr{
     .movie_img:hover .watch {
     transform: translate(0%, 575%);
     opacity: 1;
+    }
+}
+@media (max-width: 680px) and (min-width:501px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    header img {
+    background-color: transparent;
+    margin: -15px;
+    }
+    .movie_inf{
+        flex-direction: column;
+        margin: auto;
+    }
+    .movie_main{
+    
+    margin-top: -5px;
+    margin: auto;
+
+    }
+    .characters_row{
+        margin: auto;
+        align-content: flex-start;
+        margin-top: 30px;
+        width: 90%;
+    }
+    .character {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    padding: 5px;
+    }
+    
+    .character_a_lot{
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        padding: 4px;
+    }
+}
+@media (max-width: 984px) and (min-width:681px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    header img {
+    background-color: transparent;
+    margin: -15px;
+    }
+    .movie_main{
+    margin: 5px;
+    margin-top: -5px;
+
+    }
+    .characters_row{
+        margin: 5px;
+        margin-top: -5px;
+        align-content: flex-start;
+    }
+    .character {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    padding: 5px;
+    }
+    
+    .character_a_lot{
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        padding: 4px;
     }
 }
               /* tv shows POSTER css */ 

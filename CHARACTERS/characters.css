@@ -51,7 +51,6 @@ hr {
 }
 .character_main {
   width: 430px;
-  height: 450px;
   border-radius: 20px;
   margin: 30px;
   margin-right: 10px;
@@ -148,9 +147,12 @@ hr {
     justify-content: center;
     align-items: center;
 }
+.actor-row{
+  margin: auto;
+}
 .actor{
   width: 600px;
-  height: 200px;
+  height: 205px;
   margin: 30px 50px 10px;
   background-color: #9e050558;
   border-radius: 20px;
@@ -178,7 +180,67 @@ hr {
   width: 110px;
   border-radius: 10px;
 }
+.actor-info{
+  display: flex;
+  width: 75%;
+  align-items: start;
+
+}
+.about{
+  height: 90%;
+  border-right: 2px solid #ff000069;
+  width: 40%;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.about h1{
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.about .h1-big{
+  font-size: 17px;
+}
+.about .h2-big{
+  font-size: 14px;
+}
+.about p{
+  color: white;
+  font-size: 12px;
+  margin: auto;
+}
+.about .label{
+  color: rgba(253, 253, 253, 0.692);
+  font-size: 13px;
+}
+.Award {
+  width: 70%;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.Award h1{
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.Award p{
+  margin: auto;
+  color: white;
+  font-size: 12px;
+}
+.Award .label{
+  color: rgba(253, 253, 253, 0.692);
+  font-size: 15px;
+}
 @media (max-width: 500px) and (min-width: 360px) {
+
+  /* Header */
   header {
     display: flex;
     flex-direction: column;
@@ -186,31 +248,38 @@ hr {
     align-items: center;
     height: 90px;
   }
+
   header img {
     background-color: transparent;
     margin: -10px;
   }
+
   a {
     text-decoration: none;
     color: #e63946;
     font-size: 10px;
   }
+
+  /* Character Info */
   .character_inf {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .character_main {
     width: 100%;
     height: 420px;
     border-radius: 20px;
-    margin: 0px;
+    margin: 0;
   }
+
   .character_all {
     display: flex;
     justify-content: space-evenly;
   }
+
   .character_img {
     width: 150px;
     min-width: 150px;
@@ -229,7 +298,9 @@ hr {
     width: 220px;
     min-width: 155px;
     height: 250px;
+    overflow: hidden;
   }
+
   .character_story {
     width: 100%;
     height: 125px;
@@ -240,71 +311,316 @@ hr {
     text-align: center;
     background-color: #000000;
   }
-  .info-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 2px;
-    border-bottom: 1px solid #ff33004a;
-  }
+
+  /* Info Items */
+  .info-item,
   .info-item-last {
     display: flex;
     justify-content: space-between;
     padding: 2px;
   }
+
+  .info-item {
+    border-bottom: 1px solid #ff33004a;
+  }
+
   .label {
     font-size: 11px;
     font-weight: bold;
     color: #f42c1d;
   }
+
   .value {
     font-size: 10px;
     color: #ffffff;
     text-align: right;
   }
+
+  /* Story */
   .story-title {
     font-size: 18px;
     font-weight: bold;
-    margin: px;
     color: #ff0000;
   }
+
   .story-btn {
-    padding: 0px 10px;
+    padding: 0 10px;
     font-size: 10px;
     cursor: pointer;
     color: #ffffff;
   }
-  .works{
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+  /* Works */
+  .works {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .work{
-  margin: 10px;height: 220px;
-  width: 40%;
-  object-fit: cover;
-  justify-content: space-between;
+
+  .work {
+    margin: 10px 2px;
+    height: 220px;
+    width: 40%;
+    max-width: 150px;
+    object-fit: cover;
+    justify-content: space-between;
   }
-  .work img{
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
+
+  .work img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
   }
-  .actor{
-  width: 90%;
-  height: 200px;
-  margin: 30px auto 10px;
-  background-color: #9e050558;
-  border-radius: 20px;
-  display: flex;
+
+  /* Actor Section */
+  .actor {
+    width: 90%;
+    height: 400px;
+    margin: 30px auto 10px;
+    background-color: #9e050558;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px;
   }
-  .title_name{
+
+  .actor-img {
+    grid-column: 1;
+    grid-row: 1;
+    height: 100%;
+    width: 90%;
+    min-height: 200px;
+    min-width: 140px;
+    max-width: 160px;
+    margin: auto;
+  }
+
+  .actor-info {
+    display: contents;
+  }
+
+  .about {
+    border: #ffffff00;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    border-left: 2px solid #ff000069;
+    padding: 10px;
+  }
+
+  .Award {
+    width: 95%;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    border-top: 2px solid #ff000069;
+    padding: 10px 0 0;
+    margin: auto;
+  }
+
+  /* Title Name */
+  .title_name {
     width: 90%;
     height: 50px;
     font-size: 2em;
     font-weight: bold;
     display: flex;
     margin: auto;
-    left: 0px;
+    left: 0;
+  }
 }
+@media (max-width: 984px) and (min-width:501px) {
+
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+
+  header img {
+    background-color: transparent;
+    margin: -10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #e63946;
+    font-size: 10px;
+  }
+
+  /* Character Info */
+  .character_inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .character_main {
+    width: 100%;
+    border-radius: 20px;
+    margin: 0;
+    display: flex;
+  }
+
+  .character_all {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .character_img {
+    width: 145px;
+    min-width: 145px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 10px 5px;
+    border: 2px solid #ff330077;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  .character_detail {
+    width: 50%;
+    min-width: 150px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .character_story {
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px solid #ff330077;
+    text-align: center;
+    background-color: #000000;
+  }
+
+  /* Info Items */
+  .info-item,
+  .info-item-last {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
+
+  .info-item {
+    border-bottom: 1px solid #ff33004a;
+  }
+
+  .label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #f42c1d;
+  }
+
+  .value {
+    font-size: 10px;
+    color: #ffffff;
+    text-align: right;
+  }
+
+  /* Story */
+  .story-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+  }
+
+  .story-btn {
+    padding: 0 10px;
+    font-size: clamp(10px,1.5vw,30px);
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+  /* Works */
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .work {
+    margin: 10px 2px;
+    height: 220px;
+    width: 40%;
+    max-width: 150px;
+    object-fit: cover;
+    justify-content: space-between;
+  }
+
+  .work img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Actor Section */
+  .actor {
+    width: 90%;
+    height: 400px;
+    margin: 30px auto 10px;
+    background-color: #9e050558;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px;
+  }
+
+  .actor-img {
+    grid-column: 1;
+    grid-row: 1;
+    height: 100%;
+    width: 90%;
+    min-height: 200px;
+    min-width: 140px;
+    max-width: 160px;
+    margin: auto;
+  }
+
+  .actor-info {
+    display: contents;
+  }
+
+  .about {
+    border: #ffffff00;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    border-left: 2px solid #ff000069;
+    padding: 10px;
+  }
+
+  .Award {
+    width: 95%;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    border-top: 2px solid #ff000069;
+    padding: 10px 0 0;
+    margin: auto;
+  }
+
+  /* Title Name */
+  .title_name {
+    width: 90%;
+    height: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+    left: 0;
+  }
+}
+@media (max-width: 1223px) and (min-width:985px) {
+  
 }
 /*charcters img*/
 #BILLY_BUTCHER{background-image: url("../img/Characters/BILLY\ BUTCHER.jpg");}

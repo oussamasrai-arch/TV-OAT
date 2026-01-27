@@ -1,0 +1,135 @@
+body {
+    background: #9E0505;
+    background: radial-gradient(circle, rgba(158, 5, 5, 1) 0%, rgba(0, 0, 0, 1) 86%);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    height: 50px;
+}
+header img {
+    background-color: transparent;
+    margin-top: 7px;
+}
+ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.2s;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+
+}
+.header{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+    margin: 10px;
+
+}
+hr{
+    opacity: 0.1;
+    
+}
+a:hover {
+    color: #ff4d4d;
+}
+.watch-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #1a1a1a;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+}
+.watch-btn a{
+    color: white;
+    position: relative;
+    bottom: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1em;
+}
+.btn{
+    background-color: red;
+}
+
+.watch-btn svg{
+    position: relative;
+    top: 5px;
+}
+.video-container{
+    margin: auto;
+    width: 80%;
+    height: 420px;
+}
+.ifram{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width: 500px) and (min-width: 360px){
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        
+    }
+    header img {
+        background-color: transparent;
+        margin: -10px;
+    }
+    .header {
+        font-size: 10px;
+    }
+    .video-container{
+    margin: auto;
+    width: 90%;
+    height: 350px;
+    }
+}
+@media (max-width: 679px) and (min-width:501px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    header img {
+    background-color: transparent;
+    margin: -15px;
+    }
+    
+}
+@media (max-width: 984px) and (min-width:680px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    header img {
+    background-color: transparent;
+    margin: -15px;
+    }
+    
+}
