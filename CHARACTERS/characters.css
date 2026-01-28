@@ -176,8 +176,8 @@ hr {
   justify-content: space-between;
 }
 .work img{
-  height: 170px;
-  width: 110px;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 .actor-info{
@@ -238,7 +238,7 @@ hr {
   color: rgba(253, 253, 253, 0.692);
   font-size: 15px;
 }
-@media (max-width: 500px) and (min-width: 360px) {
+@media (max-width: 544px) and (min-width: 360px) {
 
   /* Header */
   header {
@@ -428,7 +428,7 @@ hr {
     left: 0;
   }
 }
-@media (max-width: 984px) and (min-width:501px) {
+@media (max-width: 984px) and (min-width:545px) {
 
   /* Header */
   header {
@@ -486,7 +486,7 @@ hr {
 
   .character_detail {
     width: 50%;
-    min-width: 150px;
+    min-width: 200px;
     height: 250px;
     overflow: hidden;
   }
@@ -620,7 +620,31 @@ hr {
   }
 }
 @media (max-width: 1223px) and (min-width:985px) {
+  .actor{
+    margin-left: -15px;
+    width: 100%;
+    height: 250px;
+  }
+  .actor-work{
+    width: 100%;
+  }
+  .title_name{
+    margin-left:-50px;
+  }
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+  }
   
+  .work {
+    margin: 10px 0px;
+    height: 220px;
+    width: 130px;
+    object-fit: cover;
+    justify-content: space-between;
+  }
 }
 /*charcters img*/
 #BILLY_BUTCHER{background-image: url("../img/Characters/BILLY\ BUTCHER.jpg");}

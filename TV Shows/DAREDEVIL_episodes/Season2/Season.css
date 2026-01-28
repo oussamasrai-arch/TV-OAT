@@ -220,7 +220,7 @@ a:hover {
     display: flex;
     justify-content: center;
 }
-@media(max-width: 500px) and (min-width: 360px){
+@media(max-width: 614px) and (min-width: 360px){
     
 
     header {
@@ -391,4 +391,105 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+}
+
+@media (max-width: 984px) and (min-width:615px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    header img {
+        background-color: transparent;
+        margin: -15px;
+    }
+    .TV_shows_inf{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .EP-S{
+    display: flex;
+    justify-content: center;
+    }
+    
+    .title_name{
+        position: static;
+    }
+    .main_TRAILER{
+        margin: auto;
+        margin-top: 10px;
+    }
+    .TV_shows_main{
+        width: 60%;
+        min-width: 410px;
+        margin: 30px 10px;
+    }
+    .TV_shows_detail{
+        width: 60%;
+    }
+    .seasons{
+        margin: 30px 20px ;
+    }
+    .episodes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    min-width: 280px;
+    height: 270px;
+    background-color: #9e05057e;
+    margin-top: 0px;
+    align-content: flex-start;
+    }
+}
+@media (max-width: 1223px) and (min-width:985px) {
+    .EP-S{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_row{
+        margin-top: 20px;
+        flex-direction: column;
+        height: 250px;
+    }
+    .title_name{
+        position: static;
+        margin: auto;
+    }
+    .seasons{
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    background-color: #9e05057e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:auto;
+    align-items: center;
+    }
+    .season{
+        width: 100px;
+        height: 25px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .episodes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 110%;
+    min-width: 350px;
+    height: 200px;
+    background-color: #9e05057e;
+    margin-top: 0;
+    }
 }

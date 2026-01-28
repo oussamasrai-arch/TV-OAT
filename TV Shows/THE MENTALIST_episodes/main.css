@@ -166,7 +166,7 @@ a:hover {
     margin: 20px;
     margin-top: -5px;
     background-color: #9e05057e;
-
+    height: 220px;
 }
 .season{
     width: 150px;
@@ -178,7 +178,7 @@ a:hover {
     align-items: center;
     margin: 5px;
 }
-@media(max-width: 500px) and (min-width: 360px){
+@media(max-width: 614px) and (min-width: 360px){
     
 
     header {
@@ -292,7 +292,7 @@ a:hover {
     .seasons{
     width: 100%;
     max-width: 400px;
-    height: 200px;
+    height: 110px;
     margin-top: 25px;
     background-color: #9e05057e;
     display: flex;
@@ -301,6 +301,7 @@ a:hover {
     position: relative;
     bottom: 230px;
     margin: 50px auto auto;
+    align-items: center;
 
     }
     .season{
@@ -314,7 +315,93 @@ a:hover {
         margin: 5px;
     }
 }
-#supernatural_img{
-    background-image: url("../../img/Supernatural.jpg");
+@media (max-width: 984px) and (min-width:615px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    header img {
+        background-color: transparent;
+        margin: -15px;
+    }
+    .TV_shows_inf{
+        flex-wrap: wrap;
+    }
+    .main_row{
+        order: 3;
+        width: 100%;
+    }
+    .main_TRAILER{
+        margin: auto;
+        margin-top: 10px;
+    }
+    .TV_shows_main{
+        width: 60%;
+        min-width: 410px;
+        margin: 30px 10px;
+    }
+    .TV_shows_detail{
+        width: 60%;
+    }
+    .seasons{
+        margin: 15px auto;
+    }
+}
+@media (max-width: 1223px) and (min-width:985px) {
+    .TV_shows_inf{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    .main_TRAILER{
+        margin:15px 60px 5px 0px;
+        margin-top: 15px;
+        grid-row: 1;
+        grid-column: 2;
+        height: 300px;
+        
+    }
+    
+    .TV_shows_main{
+        margin: 30px auto;
+        grid-row: 1 / 3; /* يمتد على صفين */
+        grid-column: 1;
+    }
+    .main_row{
+        margin: 10px 0px;
+        height: 250px;
+        width: 100%;
+    }
+    .seasons{
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+    max-width: 400px;
+    height: 110px;
+    margin-top: 25px;
+    background-color: #9e05057e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+
+    }
+    .season{
+        width: 100px;
+        height: 25px;
+        background-color: #ff0000;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+}
+#The_Mentalist {
+  background-image: url("../../img/TV SHOWS/The Mentalist.jpg");
 }
 

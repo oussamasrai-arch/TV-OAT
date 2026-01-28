@@ -141,8 +141,8 @@ hr {
   padding: 5px;
 }
 .character img {
-  width: 90px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid #ff330077;
@@ -194,7 +194,7 @@ hr {
   transform: translate(175%, 700%);
   opacity: 1;
 }
-@media (max-width: 500px) and (min-width: 360px) {
+@media (max-width: 619px) and (min-width: 360px) {
   header {
     display: flex;
     flex-direction: column;
@@ -312,7 +312,7 @@ hr {
     background-color: #ff0000;
     transform: translate(0%, 575%);
     border-radius: 25px;
-    opacity: 1;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,7 +327,78 @@ hr {
     opacity: 1;
   }
 }
-
+@media (max-width: 984px) and (min-width:620px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+  header img {
+    background-color: transparent;
+    margin: -15px;
+  }
+  .TV_shows_inf {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .TV_shows_main {
+    width: 70%;
+    height: 420px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  .TV_shows_img{
+    min-width: 180px;
+  }
+  .TV_shows_detail{
+    min-width: 185px;
+  }
+  .characters_row{
+    margin: 0;
+    align-content: flex-start;
+  }
+  .title_name {
+  width: 180px;
+  }
+  .character{
+    height: 50px;
+    width: 50px;
+  }
+  .watch {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="40,30 40,70 75,50" fill="white"/></svg>');
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    transform: translate(50%, 700%);
+    border-radius: 25px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .watch-btn {
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+  }
+  .TV_shows_img:hover .watch {
+    transform: translate(200%, 700%);
+    opacity: 1;
+  }
+}
+@media (max-width: 1223px) and (min-width:985px) {
+  .characters_row{
+    margin: 0;
+    align-content: flex-start;
+  }
+  .character{
+    height: 70px;
+    width: 70px;
+  }
+}
 /* tv shows POSTER css */
 #supernatural_img {
   background-image: url(../img/Supernatural.jpg);
