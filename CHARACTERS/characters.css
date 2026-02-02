@@ -358,13 +358,13 @@ hr {
 
   .work {
     margin: 10px 2px;
-    height: 220px;
-    width: 40%;
-    max-width: 150px;
+    height: 240px;
+    width: 159px;
+    max-width: 159px;
     object-fit: cover;
     justify-content: space-between;
   }
-
+  
   .work img {
     height: 100%;
     width: 100%;
