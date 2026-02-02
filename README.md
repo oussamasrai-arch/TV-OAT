@@ -1,3 +1,6 @@
+# Important
+The index.html file is identical to homepage.html and was copied specifically to deploy on GitHub Pages.
+DAREDEVIL and GAME OF THRONES are the only ones that are fully functional.
 # TV-OAT
 The website consists of four main sections: the Home page, the Series page, the Movies page, and the Characters page.
 

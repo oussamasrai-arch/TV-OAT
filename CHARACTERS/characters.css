@@ -238,6 +238,9 @@ hr {
   color: rgba(253, 253, 253, 0.692);
   font-size: 15px;
 }
+.last{
+  display: none;
+}
 @media (max-width: 544px) and (min-width: 360px) {
 
   /* Header */
@@ -364,7 +367,9 @@ hr {
     object-fit: cover;
     justify-content: space-between;
   }
-  
+  .last{
+    display:block
+  }
   .work img {
     height: 100%;
     width: 100%;
