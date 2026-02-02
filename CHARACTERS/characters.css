@@ -349,11 +349,11 @@ hr {
     cursor: pointer;
     color: #ffffff;
   }
-
   /* Works */
   .works {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .work {
