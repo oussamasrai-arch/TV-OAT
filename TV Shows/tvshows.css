@@ -1,3 +1,8 @@
+@keyframes watch-btn{
+    0%{opacity: 0;}
+    50%{opacity: 1;transform: translate(175%, 700%);}
+    100%{opacity: 0;}
+}
 body {
   background: #9e0505;
   background: radial-gradient(
@@ -183,6 +188,9 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name:watch-btn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 .watch-btn {
   height: 40px;

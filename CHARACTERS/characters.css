@@ -443,16 +443,9 @@ hr {
     align-items: center;
     height: 90px;
   }
-
   header img {
     background-color: transparent;
-    margin: -10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: #e63946;
-    font-size: 10px;
+    margin: -15px;
   }
 
   /* Character Info */
