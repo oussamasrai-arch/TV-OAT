@@ -1,6 +1,6 @@
 @keyframes watch-btn{
     0%{opacity: 0;}
-    50%{opacity: 1;transform: translate(175%, 700%);}
+    50%{opacity: 1;}
     100%{opacity: 0;}
 }
 body {
@@ -61,7 +61,6 @@ hr{
 }
 .characters_row{
     width: 58%;
-    height: 450px;
     border-radius: 20px;
     margin: 10px;
     margin-top: -5px;
@@ -195,7 +194,7 @@ hr{
     width: 40px;
     height: 40px;
     background-color: #ff0000;
-    transform: translate(175%, 775%);
+    transform: translate(175%, 700%);
     border-radius: 25px;
     opacity: 0;
     transition: 0.3s ease-out;
@@ -248,6 +247,8 @@ hr{
     .characters_row{
         width: 100%;
         margin: auto;
+        margin-bottom: 20px;
+
     }
     .movie_all{
         display: flex;
@@ -376,6 +377,7 @@ hr{
         align-content: flex-start;
         margin-top: 30px;
         width: 90%;
+        margin-bottom: 20px;
     }
     .character {
     width: 90px;

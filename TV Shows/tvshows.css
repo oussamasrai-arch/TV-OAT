@@ -1,6 +1,6 @@
 @keyframes watch-btn{
     0%{opacity: 0;}
-    50%{opacity: 1;transform: translate(175%, 700%);}
+    50%{opacity: 1;}
     100%{opacity: 0;}
 }
 body {
@@ -63,12 +63,12 @@ hr {
 }
 .characters_row {
   width: 58%;
-  height: 450px;
   border-radius: 20px;
   margin: 9px;
   margin-top: -5px;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 .TV_shows_all {
   display: flex;
@@ -181,7 +181,7 @@ hr {
   width: 40px;
   height: 40px;
   background-color: #ff0000;
-  transform: translate(175%, 775%);
+  transform: translate(175%, 700%);
   border-radius: 25px;
   opacity: 0;
   transition: 0.3s ease-out;
@@ -234,6 +234,7 @@ hr {
   .characters_row {
     width: 100%;
     margin: auto;
+    margin-bottom: 20px;
   }
   .TV_shows_all {
     display: flex;

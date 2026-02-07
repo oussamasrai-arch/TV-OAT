@@ -150,6 +150,9 @@ hr {
 .actor-row{
   margin: auto;
 }
+.actor-work{
+  margin-bottom: 30px;
+}
 .actor{
   width: 600px;
   height: 205px;
@@ -239,6 +242,9 @@ hr {
   font-size: 15px;
 }
 .last{
+  display: none;
+}
+.ineffective{
   display: none;
 }
 @media (max-width: 544px) and (min-width: 360px) {
